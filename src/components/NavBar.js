@@ -1,15 +1,20 @@
 import React from 'react';
-
+import CartWidget from './CartWidget';
+import icon from '../images/icon.jpeg'
 export default function NavBar(){
     return (
-        <nav class="my-2 my-md-0 mr-md-3">
-        <a href="#" className="p-1 text-dark" onclick="location.href='/views/index.html'">home</a>
-        <a href="#" className="p-2 text-dark" id="listarProductos"  onclick="listarProductos()">productos</a>
-        <a href="#" className="p-2 text-dark" onclick="vistaBusqueda()">búsqueda</a>
-        <a href="#" className="p-2 text-dark" id="iniciarsesion" onclick="vistaLogin()">iniciar sesion</a>
-        <a href="#" className="p-2 text-dark" onclick="vistaCrearCuenta()">crear cuenta</a>
+      <div>
+        <h5 className="my-0 mr-md-auto font-weight-normal">Lleguemos a fin de mes</h5>
+        <nav className="my-2 my-md-0 mr-md-3">
+        <CartWidget img={icon} href="#"/>
+        <a href="#" className="p-1 text-dark" >home</a>
+        <a href="#" className="p-2 text-dark" id="listarProductos"  >productos</a>
+        <a href="#" className="p-2 text-dark" >búsqueda</a>
+        <a href="#" className="p-2 text-dark" id="iniciarsesion" >iniciar sesion</a>
+        <a href="#" className="p-2 text-dark" >crear cuenta</a>
       </nav>
-    );
+      </div>
+    )
 }
 
  

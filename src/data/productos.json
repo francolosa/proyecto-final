@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "nombre": "carne",
+        "cantidad": 2,
+        "precioxkg": 450,
+        "ubicacion": "La paternal",
+        "direccion": "Av. Alvarez Jonte 2659",
+        "telefono": 45839997,
+        "local": "Palito",
+        "img": "../images/palito.png",
+        "offer": 0
+    },
+    {
+        "id": 1,
+        "nombre": "pollo",
+        "local": "El Rey",
+        "cantidad": 1,
+        "precioxkg": 350,
+        "ubicacion": "Devoto",
+        "direccion": "Av. Francisco Beiró 3034",
+        "telefono": 42827654,
+        "img": "../images/pollo.png",
+        "offer": 1
+    },
+    {
+        "id": 2,
+        "nombre": "carne",
+        "local": "Malena",
+        "cantidad": 1,
+        "precioxkg": 450,
+        "ubicacion": "Devoto",
+        "direccion": "Cuenca 3689",
+        "telefono": 49397652,
+        "img": "../images/malena.png",
+        "offer": 0
+    },
+    {
+        "id": 3,
+        "nombre": "carne",
+        "local": "Only Carn",
+        "cantidad": 3,
+        "precioxkg": 750,
+        "ubicacion": "Palermo",
+        "direccion": "Thames 1734",
+        "telefono": 41915432,
+        "img": "../images/onlycarn.png",
+        "offer": 1 
+    },
+    {
+        "id": 4,
+        "nombre": "maple de huevos",
+        "local": "gallinero river plate",
+        "cantidad": 2,
+        "precioxkg": 250,
+        "ubicacion": "Chacarita",
+        "direccion": "Av. Corrientes 2939",
+        "telefono": 45839497,
+        "img": "../images/maple.jpeg",
+        "offer": 1
+    }
+]
