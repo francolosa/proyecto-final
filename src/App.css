@@ -16,6 +16,7 @@ h5 {
     display: flex;
     justify-content: space-around;
     padding: 1%;
+    flex-wrap: wrap;
 }
 
 .destacados ul {
@@ -23,6 +24,7 @@ h5 {
     flex-direction: column;
     text-align: center;
     list-style-type: none;
+    flex-wrap: wrap;
 }
 
 footer ul {
@@ -31,5 +33,5 @@ footer ul {
     text-align:center;
     list-style-type: none;
     justify-content: space-between;
-
 }
+
