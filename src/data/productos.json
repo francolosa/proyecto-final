@@ -2,7 +2,7 @@
     {
         "id": 0,
         "nombre": "carne",
-        "cantidad": 2,
+        "cantidad": 0,
         "precioxkg": 450,
         "ubicacion": "La paternal",
         "direccion": "Av. Alvarez Jonte 2659",

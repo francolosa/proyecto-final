@@ -1,9 +1,11 @@
 import productos from '../data/productos.json';
+import ItemCount from './ItemCount';
 
 export default function ItemListContainer(){
     let todosLosProductos = [];
+
     
-    let arrayForEach = productos.forEach(producto => {
+   productos.forEach(producto => {
         todosLosProductos.push(
         <div className='col-md-4'>
         <div className="card mb-4 box-shadow">
@@ -16,12 +18,14 @@ export default function ItemListContainer(){
         </ul>
         </div>
         <button type="button" className="btn btn-outline-success">Más información</button>
+        <ItemCount id={producto.id}/>
+        <button type="button" className="btn btn-outline-success">Agregar al carrito</button>
         </div>
         </div>  
         )
-        console.log(todosLosProductos.map());
+        
 })
     return (
-        ""
+        todosLosProductos
     )
 }

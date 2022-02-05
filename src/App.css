@@ -35,3 +35,10 @@ footer ul {
     justify-content: space-between;
 }
 
+.itemCount {
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+    list-style-type: none;
+    justify-content: center;
+}

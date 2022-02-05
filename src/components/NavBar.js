@@ -1,4 +1,3 @@
-import ItemCount from './ItemCount';
 
 export default function NavBar(){
 
@@ -6,7 +5,7 @@ export default function NavBar(){
       <div>
         <h5 className="my-0 mr-md-auto font-weight-normal">Lleguemos a fin de mes</h5>
         <nav className="my-2 my-md-0 mr-md-3">
-        <ItemCount/>
+        
         <a href="#" className="p-1 text-dark" >home</a>
         <a href="#" className="p-2 text-dark" id="listarProductos"  >productos</a>
         <a href="#" className="p-2 text-dark" >búsqueda</a>
