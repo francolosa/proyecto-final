@@ -8,14 +8,14 @@ export default function ItemListContainer(){
 
     useEffect(()=>{
 
-        getProductos().then(function(productos){
-            setProducts(productos)
+        getProductos().then(function(productsApi){
+            setProducts(productsApi)
         })
     })
 
     return (
         <div>
-            {products.length > 0 ? <ItemList productos={products}/> : <p>No hay productos</p>}
+            {products.length > 0 ? <ItemList productos={products}/> : <p>Cargando...</p>}
         </div>
     )
 

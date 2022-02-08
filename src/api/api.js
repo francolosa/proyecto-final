@@ -1,10 +1,14 @@
-import productos from '../api/productos.json';
+import productsApi from '../api/productos.json';
+
+//var string = JSON.stringify(productos);
+//var parse = JSON.parse(string);
+
 const promesa = new Promise(function(resolve, reject){
     setTimeout(function(){
-        resolve(JSON.parse(productos));
+        resolve(productsApi);
         }, 2000);
     })
-console.log(JSON.parse(productos));
+
 export default function getProductos(){
     return promesa;
 }
