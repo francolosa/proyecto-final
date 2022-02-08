@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import productos from '../data/productos.json';
+import productos from '../api/productos.json';
 
 export default function ItemCount ({id}) {
 
