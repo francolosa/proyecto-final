@@ -8,7 +8,7 @@
         "direccion": "Av. Alvarez Jonte 2659",
         "telefono": 45839997,
         "local": "Palito",
-        "img": "../images/palito.png",
+        "img": "./images/palito.png",
         "offer": 0
     },
     {
@@ -20,7 +20,7 @@
         "ubicacion": "Devoto",
         "direccion": "Av. Francisco Beiró 3034",
         "telefono": 42827654,
-        "img": "../images/pollo.png",
+        "img": "./images/pollo.png",
         "offer": 1
     },
     {
@@ -32,7 +32,7 @@
         "ubicacion": "Devoto",
         "direccion": "Cuenca 3689",
         "telefono": 49397652,
-        "img": "../images/malena.png",
+        "img": "./images/malena.png",
         "offer": 0
     },
     {
@@ -44,7 +44,7 @@
         "ubicacion": "Palermo",
         "direccion": "Thames 1734",
         "telefono": 41915432,
-        "img": "../images/onlycarn.png",
+        "img": "./images/onlycarn.png",
         "offer": 1 
     },
     {
@@ -56,7 +56,7 @@
         "ubicacion": "Chacarita",
         "direccion": "Av. Corrientes 2939",
         "telefono": 45839497,
-        "img": "../images/maple.jpeg",
+        "img": "./images/maple.jpeg",
         "offer": 1
     }
 ]

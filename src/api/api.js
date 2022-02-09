@@ -6,7 +6,7 @@ import productsApi from '../api/productos.json';
 const promesa = new Promise(function(resolve, reject){
     setTimeout(function(){
         resolve(productsApi);
-        }, 2000);
+        }, 0);
     })
 
 export default function getProductos(){

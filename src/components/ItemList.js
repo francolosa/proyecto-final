@@ -1,11 +1,14 @@
 import Item from './Item'
 
-export default function ItemList({productos}){
+export default function ItemList({ items }) {
 
     return (
-        <div>
-            <p>Nuestros productos</p>
-            <Item productos={productos}/>
+        <div className="destacados">
+            {
+                items.map(function (item) {
+                    return <Item key={item.id} item={item} />
+                })
+            }
         </div>
     )
 }
