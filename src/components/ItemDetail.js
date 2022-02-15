@@ -1,12 +1,13 @@
 import ItemCount from "./ItemCount"
 import { Link } from 'react-router-dom';
 import { useState } from 'react'
-export default function ItemDetail({ item }) {
-    const [itemCount, setItemCount] = useState();
 
-    function onAddItem(newItemCount){
-        console.log(newItemCount);
-        setItemCount(newItemCount);
+export default function ItemDetail({ item }) {
+    const [showButton, setShowButton] = useState(false);
+
+    function onAddItem(cantidad){
+        console.log(`Se agregó ${cantidad} ${item.nombre} al carrito.`);
+        setShowButton(true);
     }
 
     return (
@@ -25,7 +26,7 @@ export default function ItemDetail({ item }) {
 
                     </ul>
                 </div>
-                {   !itemCount ?
+                {   !showButton  ?
                     <ItemCount id={item.id} onAdd={onAddItem}/> :
                     <Link to="/cart">Ir al carrito</Link>
                 }
