@@ -1,29 +1,34 @@
 import React, { useState } from 'react';
 import productos from '../api/productos.json';
 
-export default function ItemCount ({id}) {
+export default function ItemCount ({id, onAdd}) {
 
-    const [contador, setContador] = useState(0);
+    const [itemCounter, setItemCounter] = useState(0);
+
+    const addToCart = ()=>{
+        onAdd(itemCounter)
+    }
 
     const aumentarContador = () => { 
-        if(productos[id].cantidad>0 && contador<productos[id].cantidad){
-        setContador(contador+1) 
-        console.log("agrega");
-    } else { console.log("no agrega")}
+        if(productos[id].cantidad>0 && itemCounter<productos[id].cantidad){
+        setItemCounter(itemCounter+1) 
+    } 
     }
     
     const disminuirContador = () => {
-        if(contador>0){
-        setContador(contador-1)
+        if(itemCounter>0){
+        setItemCounter(itemCounter-1)
     } 
     }
     ;
     
     return ( <div className="itemCount">
             <button className="btn btn-outline-success" onClick={aumentarContador}>+ </button>
-            <button className="btn btn-outline-success" > {contador}</button>
+            <button className="btn btn-outline-success" > {itemCounter}</button>
             <button className="btn btn-outline-success" onClick={disminuirContador}>- </button>
+            <button type="button" className="btn btn-outline-success" onClick={addToCart}>Agregar al carrito</button>
             </div>
+            
         ) 
 
     

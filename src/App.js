@@ -7,6 +7,7 @@ import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemSearch from './components/ItemSearch'
 import LogIn from './components/LogIn'
 import SignIn from './components/SignIn'
+import Cart from './components/Cart'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<ItemListContainer />} greetings="Productos" />
+          <Route path="/cart" element={<Cart/>} greetings="Carrito" />
           <Route path="/products" element={<ItemListContainer />} greetings="Productos" />
           <Route path="/search" element={<ItemSearch />} greetings="Busqueda" />
           <Route path="/login" element={<LogIn />} greetings="Iniciar Sesión" />
