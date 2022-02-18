@@ -1,17 +1,26 @@
 import './App.css';
+
+//RUTAS 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+//COMPONENTES
+
 import NavBar from './components/NavBar';
 import ItemListContainer from './components/ItemListContainer';
 import Footer from './components/Footer.js'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer';
 import ItemSearch from './components/ItemSearch'
 import LogIn from './components/LogIn'
 import SignIn from './components/SignIn'
 import Cart from './components/Cart'
+import CartContextProvider from './context/cartContext'
+
 
 function App() {
 
   return (
+
+    <CartContextProvider>
     <div className="App">
 
       <BrowserRouter>
@@ -29,6 +38,7 @@ function App() {
 
       </BrowserRouter>
     </div>
+    </CartContextProvider>
   );
 }
 
