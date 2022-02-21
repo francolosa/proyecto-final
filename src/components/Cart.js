@@ -7,9 +7,9 @@ const Cart = () => {
     return (
         <div>
             {
-                cart.map((producto)=>{
+                cart.map((producto)=>(
                         <h3>{producto.nombre}</h3>                    
-                })
+                ))
                 }                
         </div>
         ) 
