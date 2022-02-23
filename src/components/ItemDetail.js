@@ -8,18 +8,15 @@ export default function ItemDetail({ item }) {
     const {addToCart, cart} = useContext(CartContext);
 
     function onAddItem(cantidad){
-        console.log(`Se agregó ${cantidad} ${item.nombre} al carrito.`);
         setShowButton(true);
         addToCart(cantidad, item);
     }
 
-    console.log(cart)
-
     return (
-        
-        <div className='col-md-4'>
+
+        <div className='col-md-4' className="destacados">
             <div className="card mb-4 box-shadow">
-                <img className="card-img-top" src={item.img} alt=""></img>
+                <img className="card-img-top" src={item.img} alt={item.nombre}></img>
                 <div className="card-body">
                     <ul className="contenido">
                         <li>{item.nombre}</li>
@@ -33,9 +30,10 @@ export default function ItemDetail({ item }) {
                 </div>
                 {   !showButton  ?
                     <ItemCount id={item.id} onAdd={onAddItem}/> :
-                    <Link to="/cart">Ir al carrito</Link>
+                    <><Link to="/cart" className="link">Ir al carrito</Link> <Link to="/products" className="link">Continuar comprando</Link></>
                 }
             </div>
         </div>
+        
     )
 }

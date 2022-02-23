@@ -56,3 +56,9 @@ form {
         align-items: center;
         text-align: center;
 }
+
+.link {
+    text-align: center;
+    color: green;
+    
+}

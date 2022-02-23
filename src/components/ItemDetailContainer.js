@@ -22,11 +22,7 @@ export default function ItemDetailContainer(){
     },[itemId])
 
     return (
-
-        <div>
-            <p>Detalle del producto </p>
             <ItemDetail item={item}/> 
-        </div>
     )
 
 };

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import CartWidget from './CartWidget';
 
 export default function NavBar(){
 
@@ -6,7 +7,7 @@ export default function NavBar(){
       <div>
         <h5 className="my-0 mr-md-auto font-weight-normal">Lleguemos a fin de mes</h5>
         <nav className="my-2 my-md-0 mr-md-3">
-        
+        <CartWidget/>
         <Link to="/" className="p-1 text-dark" >home</Link>
         <Link to="/" className="p-2 text-dark" id="listarProductos"  >productos</Link>
         <Link to="/search" className="p-2 text-dark" >búsqueda</Link>
