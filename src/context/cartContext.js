@@ -1,4 +1,3 @@
-import { isCursorAtEnd } from '@testing-library/user-event/dist/utils';
 import { createContext, useState } from 'react';
 
 export const CartContext = createContext([]);
@@ -19,7 +18,6 @@ export default function CartContextProvider ({children}) {
         }
         console.log(`Se agregaron al carrito ${cantidad} unidades del producto con ID: ${item.id}`)
         console.log("Ahora el carrito contiene:");
-        console.log(cart);
 
     }
 
@@ -30,8 +28,9 @@ export default function CartContextProvider ({children}) {
         })
         setCart(newCart);
         console.log("El carrito ahora contiene: ")
-        console.log(newCart)
   }
+  console.log(cart);
+
 
     return (
         <CartContext.Provider value={{ cart, addToCart, deleteFromCart }}>

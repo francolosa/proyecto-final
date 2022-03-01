@@ -14,6 +14,7 @@ import LogIn from './components/LogIn'
 import SignIn from './components/SignIn'
 import Cart from './components/Cart'
 import CartContextProvider from './context/cartContext'
+import ItemOffersContainer from './components/ItemOffersContainer';
 
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
           <Route path="/" element={<ItemListContainer />} greetings="Productos" />
           <Route path="/cart" element={<Cart/>} greetings="Carrito" />
           <Route path="/products" element={<ItemListContainer />} greetings="Productos" />
+          <Route path="/sale" element={<ItemOffersContainer/>} greetings="Ofertas"/>
           <Route path="/search" element={<ItemSearch />} greetings="Busqueda" />
           <Route path="/login" element={<LogIn />} greetings="Iniciar Sesión" />
           <Route path="/signin" element={<SignIn />} greetings="Crear Cuenta" />

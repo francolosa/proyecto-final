@@ -10,6 +10,7 @@ export default function NavBar(){
         <CartWidget/>
         <Link to="/" className="p-1 text-dark" >home</Link>
         <Link to="/" className="p-2 text-dark" id="listarProductos"  >productos</Link>
+        <Link to="/sale" className="p-2 text-dark" id="ofertas"  >ofertas</Link>
         <Link to="/search" className="p-2 text-dark" >búsqueda</Link>
         <Link to="/login" className="p-2 text-dark" id="iniciarsesion" >iniciar sesion</Link>
         <Link to="/signin" className="p-2 text-dark" >crear cuenta</Link>

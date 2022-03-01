@@ -1,21 +1,22 @@
 import { useEffect, useState } from 'react';
 import getProductos from '../api/api';
-import ItemList from './ItemList';
+import ItemOfferList from './ItemOfferList';
 
 export default function ItemListContainer(){
-    console.log("itemlistcontainer")
+    console.log("item offer scontainer")
    const [products, setProducts] = useState([]);
+
     useEffect(()=>{
 
         getProductos().then(function(productsApi){
             setProducts(productsApi)
         }).catch(error=>{ console.log(error)})
     })
-
+    let offer = 1;
     return (
         <div className="destacados">
-            <p>Nuestros productos</p>
-            {products.length > 0 ? <ItemList items={products}/> : <p>Cargando...</p>}
+            <p>Ofertas</p>
+            {products.length > 0 ? <ItemOfferList items={products} offer={offer}/> : <p>Cargando...</p>}
         </div>
     )
 
