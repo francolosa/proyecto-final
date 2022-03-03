@@ -21,6 +21,11 @@ export default function CartContextProvider ({children}) {
 
     }
 
+    const clearCart = () => {
+        cart.length = 0;
+        console.log("El carrito ahora esta vacio")
+    }
+
     const deleteFromCart = (productId) => {
         let newCart = cart.filter((producto)=>{
             console.log(`Se eliminó del carrito el producto con ID: ${productId}`)
@@ -29,11 +34,13 @@ export default function CartContextProvider ({children}) {
         setCart(newCart);
         console.log("El carrito ahora contiene: ")
   }
+
+
   console.log(cart);
 
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, deleteFromCart }}>
+        <CartContext.Provider value={{ cart, addToCart, deleteFromCart, clearCart }}>
             {children}
         </CartContext.Provider>
     )

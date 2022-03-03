@@ -15,13 +15,14 @@ import SignIn from './components/SignIn'
 import Cart from './components/Cart'
 import CartContextProvider from './context/cartContext'
 import ItemOffersContainer from './components/ItemOffersContainer';
-
+import AddUserContainer from './components/AddUserContainer';
 
 function App() {
 
   return (
 
     <CartContextProvider>
+
     <div className="App">
 
       <BrowserRouter>
@@ -31,6 +32,7 @@ function App() {
           <Route path="/cart" element={<Cart/>} greetings="Carrito" />
           <Route path="/products" element={<ItemListContainer />} greetings="Productos" />
           <Route path="/sale" element={<ItemOffersContainer/>} greetings="Ofertas"/>
+          <Route path="/register" element={<AddUserContainer/>} greetings="registro"/>
           <Route path="/search" element={<ItemSearch />} greetings="Busqueda" />
           <Route path="/login" element={<LogIn />} greetings="Iniciar Sesión" />
           <Route path="/signin" element={<SignIn />} greetings="Crear Cuenta" />

@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import React, {useContext} from 'react';
 import { CartContext } from '../context/cartContext';
 
-const Cart = () => {
+const Cart = (  ) => {
 
     const { cart, deleteFromCart } = useContext(CartContext);
     let total = 0;
@@ -15,9 +15,10 @@ const Cart = () => {
     function deleteItem(productId){
         deleteFromCart(productId);
     }
-    
+
     return (
         <div>
+
             {(!isEmptyObject(cart)) ? <>
             <table class="table">
                 <thead>
@@ -54,11 +55,13 @@ const Cart = () => {
                 </tr>              
               </tbody>
             </table> 
-                          <Link to="/checkout" className="link"><p>Terminar mi compra</p></Link>
-                          <Link to="/products" className="link"><p>Continuar comprando</p></Link>
 
+            <Link to="/register" className="link"><p>Ir a pagar</p></Link>
+            <Link to="/products" className="link"><p>Continuar comprando</p></Link>
                 </>
             : ( <p className="link">El carrito esta vacío.., te invitamos a continuar tu búsqueda <Link to="/Products"> por aquí </Link></p>) }
+        
+
         </div>
         ) 
 }
